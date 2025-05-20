@@ -1,6 +1,6 @@
 // Counter
 let bets = 0;
-let money = 50;  // Start with £50
+let money = 50; 
 
 // Images
 let bgimg, machineimg, leverUp, leverDown;
@@ -37,24 +37,24 @@ let callsReceived = 0;
 
 // Load assets
 function preload() {
-  bgimg = loadImage('/assets/bg.gif');
-  machineimg = loadImage('/assets/machine.png');
-  leverUp = loadImage('/assets/leverUp.png');
-  leverDown = loadImage('/assets/leverDown.png');
-  phoneImg = loadImage('/assets/phone.png');
+  bgimg = loadImage('assets/bg.gif');
+  machineimg = loadImage('assets/machine.png');
+  leverUp = loadImage('assets/leverUp.png');
+  leverDown = loadImage('assets/leverDown.png');
+  phoneImg = loadImage('assets/phone.png');
 
-  cherry = loadImage('/assets/cherry.png');
-  bell = loadImage('/assets/bell.png');
-  bar = loadImage('/assets/bar.png');
-  seven = loadImage('/assets/seven.png');
+  cherry = loadImage('assets/cherry.png');
+  bell = loadImage('assets/bell.png');
+  bar = loadImage('assets/bar.png');
+  seven = loadImage('assets/seven.png');
 
   soundFormats('mp3');
-  cherrySound = loadSound('/assets/cherrywin.mp3');
-  bellSound = loadSound('/assets/bellwin.mp3');
-  barSound = loadSound('/assets/barwin.mp3');
-  sevenSound = loadSound('/assets/sevenwin.mp3');
-  leverSound = loadSound('/assets/lever.mp3');
-  phoneSound = loadSound('/assets/phone.mp3');
+  cherrySound = loadSound('assets/cherrywin.mp3');
+  bellSound = loadSound('assets/bellwin.mp3');
+  barSound = loadSound('assets/barwin.mp3');
+  sevenSound = loadSound('assets/sevenwin.mp3');
+  leverSound = loadSound('assets/lever.mp3');
+  phoneSound = loadSound('assets/phone.mp3');
 }
 
 // Setup screen
@@ -88,7 +88,7 @@ function setup() {
 
   currentReelIcons = [random(icons), random(icons), random(icons)];
 
-  // Create top-left stats button
+  // Create top-left  button
 statsButton = createButton('🏠');
 statsButton.position(20, 20);
 statsButton.size(50, 50);
